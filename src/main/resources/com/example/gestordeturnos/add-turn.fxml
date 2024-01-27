@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox styleClass="formContainer" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.gestordeturnos.graphic.controller.AddTurnController">
+    <VBox fx:id="form">
+        <Label text="Formulario para agregar turnos" styleClass="formTitle"/>
+        <HBox>
+            <Label text="Nombre: " />
+            <TextField fx:id="name" />
+        </HBox>
+        <HBox>
+            <Label text="Dni: " />
+            <TextField fx:id="dni"/>
+        </HBox>
+        <HBox>
+            <Label text="Fecha: " />
+            <DatePicker fx:id="date" />
+        </HBox>
+        <HBox>
+            <Label text="Hora: " />
+            <Spinner fx:id="hourTime" />
+        </HBox>
+        <HBox>
+            <Label text="Minutos: " />
+            <Spinner fx:id="minutesTime" />
+        </HBox>
+        <HBox>
+            <Label text="Especialidad: " />
+            <ChoiceBox fx:id="speciality">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="odontologia" />
+                        <String fx:value="oftalmologia" />
+                        <String fx:value="cardiologia" />
+                        <String fx:value="traumatologia" />
+                        <String fx:value="nutricion" />
+                    </FXCollections>
+                </items>
+            </ChoiceBox>
+        </HBox>
+        <Button onAction="#addTurn" text="Agregar Turno" />
+        <Label fx:id="responseMessage" />
+    </VBox>
+</HBox>

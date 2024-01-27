@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.gestordeturnos.graphic.controller.MainController" stylesheets="@styles.css"
+      styleClass="mainContainer">
+  <HBox prefHeight="30.0" prefWidth="480.0" styleClass="menu">
+    <Button onAction="#seeTurns" text="Turnos" />
+
+    <Button onAction="#addTurn" text="Agregar Turno" />
+
+    <Button onAction="#deleteTurn" text="Borrar Turno" />
+
+    <Button onAction="#searchTurn" text="Buscar Turno"/>
+
+    <Label fx:id="currentDate"/>
+  </HBox>
+
+  <ScrollPane fitToWidth="true" fitToHeight="true" vbarPolicy="as_needed" hbarPolicy="as_needed">
+    <FlowPane fx:id="turnsContainer" styleClass="turnsContainer">
+
+    </FlowPane>
+  </ScrollPane>
+</VBox>

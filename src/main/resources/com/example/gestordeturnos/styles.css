@@ -1,0 +1,112 @@
+
+/***** MAIN-MENU *****/
+.mainContainer {
+    -fx-spacing: 30px;
+}
+
+.menu {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+    -fx-padding: 30px 0px 0px 0px;
+}
+
+Button {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.searchContainer{
+    -fx-alignment: center;
+    -fx-spacing: 5px;
+}
+
+.turnsContainer{
+    -fx-padding: 20px;
+    -fx-alignment: center;
+}
+
+.tableContainer{
+    -fx-padding: 10px;
+    -fx-alignment: center;
+}
+
+.tableTitle{
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+.table{
+    -fx-pref-width: 602px;
+}
+
+.codeColumn{
+    -fx-pref-width: 100px;
+}
+
+.patientColumn{
+    -fx-pref-width: 200px;
+}
+
+.dateColumn{
+    -fx-pref-width: 200px;
+}
+
+.servedColumn{
+    -fx-pref-width: 100px;
+}
+
+
+/***** ADD-TURN *****/
+.formContainer{
+    -fx-alignment: center;
+}
+
+#form{
+    -fx-spacing: 20px;
+    -fx-padding: 30px;
+    -fx-alignment: center;
+}
+
+.formTitle{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+#form HBox Label{
+    -fx-font-size: 14px;
+    -fx-pref-width: 100px;
+}
+
+/***** DELETE-TURN *****/
+.deleteTurnContainer, .deleteTurnContainer HBox{
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+}
+
+.deleteTurnContainer Label{
+    -fx-font-size: 14px
+}
+
+/***** TURN *****/
+.turnContainer, .searchContainer, #responseContainer, #responseContainer VBox{
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+}
+
+.searchContainer, #responseContainer{
+    -fx-spacing: 20px;
+}
+
+#responseContainer Label{
+    -fx-font-size: 16px;
+}
+
+.labelForData {
+    -fx-font-weight: bold;
+    -fx-width: 70px;
+}
+
+
+
+
+
